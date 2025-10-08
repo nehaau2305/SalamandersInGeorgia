@@ -1,6 +1,8 @@
 package projects.mobile.nehaa.salamandersingeorgia;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,5 +26,13 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-    }
-}
+
+        // after 3 seconds, transition to the next activity
+        new Handler().postDelayed(() -> {
+            Intent intent = new Intent(MainActivity.this, SalamanderActivity.class);
+            startActivity(intent);
+            finish();
+        }, 4000);
+
+    } //onCreate
+} //MainActivity
