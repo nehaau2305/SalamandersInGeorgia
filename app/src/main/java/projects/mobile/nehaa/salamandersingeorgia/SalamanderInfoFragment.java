@@ -1,5 +1,6 @@
 package projects.mobile.nehaa.salamandersingeorgia;
 
+import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,4 +19,15 @@ public class SalamanderInfoFragment extends Fragment {
 
     // required default constructor
     public SalamanderInfoFragment() {  }
+
+    public static SalamanderInfoFragment newInstance(int salamanderIndex) {
+        // this uses the default constructor (not defined in this class, but Java-supplied)
+        SalamanderInfoFragment fragment = new SalamanderInfoFragment();
+        // save the selected list weedIndex in the new fragment's Bundle data
+        // the WeedWebViewFragment needs to know the weed info to display
+        Bundle args = new Bundle();
+        args.putInt("salamanderIndex", salamanderIndex);
+        fragment.setArguments( args );
+        return fragment;
+    }
 }

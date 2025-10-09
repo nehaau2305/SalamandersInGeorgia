@@ -29,5 +29,27 @@ public class SalamanderActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+
+        // load selected index if exists already
+        if (savedInstanceState != null) {
+            selectedIndex = savedInstanceState.getInt("selectedIndex", 0);
+        }
+
+        // add list fragment
+        SalamanderListFragment listFragment = new SalamanderListFragment();
+        Bundle args = new Bundle();
+        args.putInt("selectedIndex", selectedIndex);
+        listFragment.setArguments(args);
+
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.salamanderListFragmentContainer, listFragment).commit();
+
+        // if landscape orientation (check if info container exists) create info fragment
+        if (findViewById(R.id.salamanderInfoFragmentContainer) != null) {
+            SalamanderInfoFragment salamanderInfoFragment = SalamanderInfoFragment.newInstance(selectedIndex);
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.salamanderInfoFragmentContainer, salamanderInfoFragment).commit();
+        }
+
     } //onCreate
 }
