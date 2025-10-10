@@ -16,9 +16,13 @@ public class SalamanderInfoFragment extends Fragment {
     // initialize variables
     private int salamanderIndex;
     private TextView titleTV;
+    private TextView scientificTV;
     private TextView textV;
     private ImageView img;
-    private final int[] salamandersImages = {};
+    private final int[] salamandersImages = {R.drawable.frosted_flatwood_salamander, R.drawable.reticulated_flatwood_salamander,
+            R.drawable.frosted_flatwood_salamander, R.drawable.frosted_flatwood_salamander,
+            R.drawable.frosted_flatwood_salamander, R.drawable.frosted_flatwood_salamander,
+            R.drawable.frosted_flatwood_salamander};
     private final int[] salamandersInfoTexts = {R.raw.frosted_flatwoods_sal, R.raw.reticulated_flatwoods_sal,
             R.raw.pigeon_mountain_sal, R.raw.green_sal, R.raw.tennessee_cave_sal,
             R.raw.georgia_blind_sal, R.raw.patch_nosed_sal};
@@ -47,15 +51,19 @@ public class SalamanderInfoFragment extends Fragment {
         // connect layout components to those in the xml file
         img = view.findViewById(R.id.salamanderImageView);
         titleTV = view.findViewById(R.id.titleText);
+        scientificTV = view.findViewById(R.id.scientificNameText);
         textV = view.findViewById(R.id.infoText);
         // set images
         if (salamanderIndex >=0 && salamanderIndex < salamandersInfoTexts.length) {
-            //img.setImageResource(salamandersImages[salamanderIndex]);
+            img.setImageResource(salamandersImages[salamanderIndex]);
             String fullText = readTextFile(salamandersInfoTexts[salamanderIndex]);
             // separate title line from text file
-            String[] lines = fullText.split("\n", 2);
+            // 2 indicates splitting the text into 3 portions
+            // first portion extends only until the first new line character
+            String[] lines = fullText.split("\n", 3);
             titleTV.setText(lines[0]);
-            textV.setText(lines.length > 1 ? lines[1] : "");
+            scientificTV.setText(lines[1]);
+            textV.setText(lines.length > 1 ? lines[2] : "");
         } // set scenic UI components according to selected park index
         return view;
     } //onViewCreated
