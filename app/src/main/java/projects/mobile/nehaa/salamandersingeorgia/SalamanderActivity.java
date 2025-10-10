@@ -1,8 +1,10 @@
 package projects.mobile.nehaa.salamandersingeorgia;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -50,6 +52,23 @@ public class SalamanderActivity extends AppCompatActivity {
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.salamanderInfoFragmentContainer, salamanderInfoFragment).commit();
         }
-
     } //onCreate
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId() == android.R.id.home ) {
+            onBackPressed();
+            return true;
+        }
+        return super.onOptionsItemSelected( item );
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("selectedIndex", selectedIndex);
+    }
+
+    public int getSelectedIndex() {return selectedIndex;}
+    public void setSelectedIndex(int i) {selectedIndex = i;}
 }
