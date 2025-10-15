@@ -24,8 +24,8 @@ public class SalamanderInfoFragment extends Fragment {
     private ImageView img;
     private final int[] salamandersImages = {R.drawable.frosted_flatwood_salamander, R.drawable.reticulated_flatwood_salamander,
             R.drawable.pigeon_mountain_salamander, R.drawable.green_salamander,
-            R.drawable.frosted_flatwood_salamander, R.drawable.frosted_flatwood_salamander,
-            R.drawable.frosted_flatwood_salamander};
+            R.drawable.tennessee_cave_salamander, R.drawable.georgia_blind_salamander,
+            R.drawable.patch_nosed_salamander};
     private final int[] salamandersInfoTexts = {R.raw.frosted_flatwoods_sal, R.raw.reticulated_flatwoods_sal,
             R.raw.pigeon_mountain_sal, R.raw.green_sal, R.raw.tennessee_cave_sal,
             R.raw.georgia_blind_sal, R.raw.patch_nosed_sal};
