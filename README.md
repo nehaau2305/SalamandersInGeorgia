@@ -9,8 +9,10 @@ This app allows users to pick a salamander species from a list to then view deta
 - Dynamic content display
 
 ## Screenshots
-### Splash Screen
-![Splash Screen](images/salamander_splash.png)
+#### Splash Screen
+<a href="images/salamander_splash.png">
+  <img src="images/salamander_splash.png" width="300">
+</a>
 
 ## Technologies Used
 - Language: Java
