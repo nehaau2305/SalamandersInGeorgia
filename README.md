@@ -47,9 +47,9 @@ This app allows users to pick a salamander species from a list to then view deta
 
 ## Setup
 1. Clone this repository
-<pre>```bash 
-  git clone https://github.com/nehaau2305/SalamandersInGeorgia.git
-  ```</pre>
+```bash 
+git clone https://github.com/nehaau2305/SalamandersInGeorgia.git
+```
 2. Open the project in Android Studio
 3. Allow Android Studio to sync Gradle to ensure all dependencies are installed
 4. Add a new device in the Device Manager to run the emulator or connect a physical Android device
