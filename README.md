@@ -14,6 +14,25 @@ This app allows users to pick a salamander species from a list to then view deta
   <img src="images/salamander_splash.png" width="200">
 </a>
 
+#### Portrait Orientation
+<a href="images/salamander_list.png">
+  <img src="images/salamander_list.png" width="200">
+</a>
+<a href="images/salamander_info_1.png">
+  <img src="images/salamander_info_1.png" width="200">
+</a>
+<a href="images/salamander_info_2.png">
+  <img src="images/salamander_info_2.png" width="200">
+</a>
+
+#### Landscape Orientation
+<a href="images/salamander_landscape_1.png">
+  <img src="images/salamander_landscape_1.png" width="200">
+</a>
+<a href="images/salamander_landscape_2.png">
+  <img src="images/salamander_landscape_2.png" width="200">
+</a>
+
 ## Technologies Used
 - Language: Java
 - IDE: Android Studio
