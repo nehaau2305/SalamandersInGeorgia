@@ -27,10 +27,10 @@ This app allows users to pick a salamander species from a list to then view deta
 
 #### Landscape Orientation
 <a href="images/salamander_landscape_1.png">
-  <img src="images/salamander_landscape_1.png" width="200">
+  <img src="images/salamander_landscape_1.png" height="200">
 </a>
 <a href="images/salamander_landscape_2.png">
-  <img src="images/salamander_landscape_2.png" width="200">
+  <img src="images/salamander_landscape_2.png" height="200">
 </a>
 
 ## Technologies Used
