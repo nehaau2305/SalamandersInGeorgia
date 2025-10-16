@@ -11,7 +11,7 @@ This app allows users to pick a salamander species from a list to then view deta
 ## Screenshots
 #### Splash Screen
 <a href="images/salamander_splash.png">
-  <img src="images/salamander_splash.png" width="300">
+  <img src="images/salamander_splash.png" width="200">
 </a>
 
 ## Technologies Used
