@@ -8,6 +8,10 @@ This app allows users to pick a salamander species from a list to then view deta
 - Clean & responsive XML layouts
 - Dynamic content display
 
+## Screenshots
+### Splash Screen
+![Splash Screen](images/salamander_splash.png)
+
 ## Technologies Used
 - Language: Java
 - IDE: Android Studio
