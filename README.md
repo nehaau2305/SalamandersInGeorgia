@@ -1,5 +1,5 @@
 # Salamanders In Georgia
-Android application built using Java & Android Studio that demonstrates modern Android development practices, including fragments, XML layouts, & data display.
+Android application built using Java & Android Studio that demonstrates modern Android development practices including fragments, XML layouts, & data display.
 This app allows users to pick a salamander species from a list to then view details about it through a user-friendly interface.
 
 ## Fetaures
